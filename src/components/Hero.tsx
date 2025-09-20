@@ -7,19 +7,18 @@ import educationIcons from "@/assets/education-icons-3d.png";
 const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* Modern Background with AI Image */}
+      {/* Realistic Campus Background */}
       <div className="absolute inset-0">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/75 to-purple-600/80" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-secondary/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
         
-        {/* Animated Elements */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-white/10 to-blue-200/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-r from-purple-400/10 to-pink-400/10 rounded-full blur-3xl float-animation" />
-        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-r from-cyan-400/5 to-blue-400/5 rounded-full blur-2xl animate-pulse delay-1000" />
+        {/* Subtle Overlay Elements */}
+        <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-r from-white/5 to-blue-100/5 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute bottom-32 left-20 w-48 h-48 bg-gradient-to-r from-primary/5 to-accent/5 rounded-full blur-xl float-animation" />
       </div>
 
       <div className="relative container mx-auto px-4 py-16 lg:py-24">
