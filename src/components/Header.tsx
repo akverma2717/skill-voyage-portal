@@ -31,20 +31,26 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Role-based Login Buttons */}
+          {/* Role-based Registration Buttons */}
           <div className="flex items-center space-x-3 slide-in-right">
-            <Button variant="outline" size="sm" className="hidden sm:flex">
-              <User className="w-4 h-4 mr-2" />
-              Student
-            </Button>
-            <Button variant="outline" size="sm" className="hidden sm:flex">
-              <Users className="w-4 h-4 mr-2" />
-              Faculty
-            </Button>
-            <Button size="sm" className="bg-gradient-primary hover:scale-105 transition-transform">
-              <Settings className="w-4 h-4 mr-2" />
-              Admin
-            </Button>
+            <Link to="/register?role=student">
+              <Button variant="outline" size="sm" className="hidden sm:flex">
+                <User className="w-4 h-4 mr-2" />
+                Student
+              </Button>
+            </Link>
+            <Link to="/register?role=faculty">
+              <Button variant="outline" size="sm" className="hidden sm:flex">
+                <Users className="w-4 h-4 mr-2" />
+                Faculty
+              </Button>
+            </Link>
+            <Link to="/login">
+              <Button size="sm" className="bg-gradient-primary hover:scale-105 transition-transform">
+                <Settings className="w-4 h-4 mr-2" />
+                Login
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>
